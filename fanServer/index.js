@@ -1,7 +1,7 @@
 var fakeData = require('./fakeData.js')
 
 const http = require("http")
-
+const url = require('url');
 const socketIo = require("socket.io")
 
 const port = process.env.PORT || 7070
@@ -19,27 +19,28 @@ const io = socketIo(server, {
   }
 })
 
-
+var fanTokens = fakeData.fanTokens // reemplazaremo
 
 io.sockets.on("connection", (socket) => {
 
 
-  io.emit("mount", 'ready');
+  io.emit("mount", 'ready')
   
   // socket.on('message', (evento, nro) => {
   //   io.emit('output_changed', nro)
   // })
 
   setInterval(() => {
-    io.emit("message", fakeData.fanTokens)
+    // console.log('Tokens updated')
+    io.emit("message", fanTokens)
     var random_boolean = Math.random() < 0.5
-    var random_index = Math.floor(Math.random() * fakeData.fanTokens.length)
+    var random_index = Math.floor(Math.random() * fanTokens.length)
     if(random_boolean){
-      fakeData.fanTokens[random_index].value += 1
-      fakeData.fanTokens[random_index].trend = 'up'
+      fanTokens[random_index].value += 1
+      fanTokens[random_index].trend = 'up'
     }else{
-      fakeData.fanTokens[random_index].value -= 1
-      fakeData.fanTokens[random_index].trend = 'down'
+      fanTokens[random_index].value -= 1
+      fanTokens[random_index].trend = 'down'
     }
   }, 3000)
 
@@ -52,25 +53,26 @@ function handleRequest(req, res){ // para api reqs
 //   console.log(req.url == '/') 
   if (req.url == '/') { //check the URL of the current request
   // set response header
-  res.writeHead(200, { 'Content-Type': 'text/html' }); 
+  res.writeHead(200, { 'Content-Type': 'text/html' }) 
   // set response content    
-  res.write('<html><body><p>This is home Page.</p></body></html>');
-  res.end();
+  res.write('<html><body><p>This is home Page.</p></body></html>')
+  res.end()
 
 }
-else if (req.url == "/student") {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<html><body><p>This is student Page.</p></body></html>');
-  res.end();
+else if (req.url.startsWith("/api/fanTokens")) {
+  const queryObject = url.parse(req.url,true).query;
+  console.log(queryObject);
+  res.writeHead(200, { 'Content-Type': 'application/json' })
+  res.write(JSON.stringify(fanTokens))
+  res.end()
 }
 else if (req.url == "/admin") {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<html><body><p>This is admin Page.</p></body></html>');
-  res.end();
-
+  res.writeHead(200, { 'Content-Type': 'text/html' })
+  res.write('<html><body><p>This is admin Page.</p></body></html>')
+  res.end()
 }
 else
-  res.end('Invalid Request!');
+  res.end('Invalid Request!')
 }
 
 

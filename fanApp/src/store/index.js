@@ -3,8 +3,7 @@ import Vuex from 'vuex'
 //
 import playersData from "./dummyPlayers.json"
 import userData from "./dummyUserData.js"
-// import fanTokens from "./dummyTokens.js"
-//
+
 
 Vue.use(Vuex)
 
