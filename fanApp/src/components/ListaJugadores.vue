@@ -82,9 +82,6 @@ export default {
     };
   },
   methods: {
-    newUser() {
-      window.alert("Noop");
-    },
     searchOnTable() {
       this.searched = searchByName(this.players, this.search);
       // console.log(this.searched);
@@ -95,23 +92,6 @@ export default {
     this.searched = this.players;
   },
   mounted() {
-    // setInterval(function () {//simulamos cambios en el trend en tiempo real
-    //   var chips = document.getElementsByClassName("trendChip");
-    //   chips.forEach((element) => {
-    //     var num = Math.floor(Math.random()*10) + 1;
-    //     num *= Math.round(Math.random()) ? 1 : -1;
-    //     if (num>0) {
-    //      // this will get a number between 1 and 99;
-    //       element.classList.add("is-primary");
-    //       element.classList.remove("is-danger");
-    //     } else {
-    //       element.classList.remove("is-primary");
-    //       element.classList.add("is-danger");
-    //     }
-
-    //     element.firstChild.innerHTML = num + " %"
-    //   });
-    // }, 3000);
   },
 };
 </script>

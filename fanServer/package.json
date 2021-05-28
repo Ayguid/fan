@@ -1,15 +1,18 @@
 {
-  "name": "jhonnyfiveexperiments",
+  "name": "fanServer2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "socket.io": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

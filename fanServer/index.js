@@ -1,7 +1,11 @@
 var fakeData = require('./fakeData.js')
+
 const http = require("http")
+
 const socketIo = require("socket.io")
+
 const port = process.env.PORT || 7070
+
 const server = http.createServer(function (req, res){
   handleRequest(req, res) // para api reqs
 }).listen(port, () => {
@@ -14,6 +18,7 @@ const io = socketIo(server, {
     methods: ["GET", "POST"],
   }
 })
+
 
 
 io.sockets.on("connection", (socket) => {
@@ -36,14 +41,15 @@ io.sockets.on("connection", (socket) => {
       fakeData.fanTokens[random_index].value -= 1
       fakeData.fanTokens[random_index].trend = 'down'
     }
-    
   }, 3000)
+
 })
 
 
 
 
 function handleRequest(req, res){ // para api reqs
+//   console.log(req.url == '/') 
   if (req.url == '/') { //check the URL of the current request
   // set response header
   res.writeHead(200, { 'Content-Type': 'text/html' }); 
@@ -66,3 +72,7 @@ else if (req.url == "/admin") {
 else
   res.end('Invalid Request!');
 }
+
+
+
+
