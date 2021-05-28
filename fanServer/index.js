@@ -1,7 +1,9 @@
 const http = require("http")
 const socketIo = require("socket.io")
 const port = process.env.PORT || 7070
-const server = http.createServer().listen(port, () => {})
+const server = http.createServer().listen(port, () => {
+  console.log("server running in port", port)
+})
 
 const io = socketIo(server, {
   cors: {
