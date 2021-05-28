@@ -1,0 +1,588 @@
+[
+    {
+        "id": 1003,
+        "fName": "Hector",
+        "lName": "Bellerin",
+        "team": "Arsenal",
+        "position": "Defender",
+        "image": "hectorbellerin.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1101,
+        "fName": "Petr",
+        "lName": "Cech",
+        "team": "Arsenal",
+        "position": "Goalkeeper",
+        "image": "petrcech.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1402,
+        "fName": "Olivier",
+        "lName": "Giroud",
+        "team": "Arsenal",
+        "position": "Striker",
+        "image": "oliviergiroud.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1027,
+        "fName": "Alex",
+        "lName": "Iwobi",
+        "team": "Arsenal",
+        "position": "Midfielder 2",
+        "image": "alexiwobi.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1009,
+        "fName": "Laurent",
+        "lName": "Koscielny",
+        "team": "Arsenal",
+        "position": "Defender",
+        "image": "laurentkoscielny.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1033,
+        "fName": "Mesut",
+        "lName": "Ozil",
+        "team": "Arsenal",
+        "position": "Midfielder 1",
+        "image": "mesutozil.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1048,
+        "fName": "Alexis",
+        "lName": "Sanchez",
+        "team": "Arsenal",
+        "position": "Striker",
+        "image": "alexissanchez.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1041,
+        "fName": "Theo",
+        "lName": "Walcott",
+        "team": "Arsenal",
+        "position": "Midfielder 2",
+        "image": "theowalcott.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1404,
+        "fName": "Marcos",
+        "lName": "Alonso",
+        "team": "Chelsea",
+        "position": "Defender",
+        "image": "marcosalonso.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1201,
+        "fName": "Cesar",
+        "lName": "Azpilicueta",
+        "team": "Chelsea",
+        "position": "Defender",
+        "image": "cesarazpilicueta.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1304,
+        "fName": "Gary",
+        "lName": "Cahill",
+        "team": "Chelsea",
+        "position": "Defender",
+        "image": "garycahill.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1043,
+        "fName": "Diego",
+        "lName": "Costa",
+        "team": "Chelsea",
+        "position": "Striker",
+        "image": "diegocosta.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1016,
+        "fName": "Thibaut",
+        "lName": "Courtois",
+        "team": "Chelsea",
+        "position": "Goalkeeper",
+        "image": "thibautcourtois.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1026,
+        "fName": "Eden",
+        "lName": "Hazard",
+        "team": "Chelsea",
+        "position": "Midfielder 1",
+        "image": "edenhazard.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1104,
+        "fName": "Nemanja",
+        "lName": "Matic",
+        "team": "Chelsea",
+        "position": "Midfielder 2",
+        "image": "nemanjamatic.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1032,
+        "fName": "Victor",
+        "lName": "Moses",
+        "team": "Chelsea",
+        "position": "Midfielder 2",
+        "image": "victormoses.jpg",
+        "ranking": 1500
+    },
+
+    {
+        "id": 1103,
+        "fName": "Christian",
+        "lName": "Benteke",
+        "team": "Crystal Palace",
+        "position": "Striker",
+        "image": "christianbenteke.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1038,
+        "fName": "Daniel",
+        "lName": "Amartey",
+        "team": "Leicester",
+        "position": "Midfielder 2",
+        "image": "danielamartey.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1007,
+        "fName": "Robert",
+        "lName": "Huth",
+        "team": "Leicester",
+        "position": "Defender",
+        "image": "roberthuth.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1029,
+        "fName": "Riyad",
+        "lName": "Mahrez",
+        "team": "Leicester",
+        "position": "Midfielder 2",
+        "image": "riyadmahrez.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1012,
+        "fName": "Wes",
+        "lName": "Morgan",
+        "team": "Leicester",
+        "position": "Defender",
+        "image": "wesmorgan.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2306,
+        "fName": "Kasper",
+        "lName": "Schmeichel",
+        "team": "Leicester",
+        "position": "Goalkeeper",
+        "image": "kasperschmeichel.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1049,
+        "fName": "Islam",
+        "lName": "Slimani",
+        "team": "Leicester",
+        "position": "Striker",
+        "image": "islamslimani.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1302,
+        "fName": "Jamie",
+        "lName": "Vardy",
+        "team": "Leicester",
+        "position": "Striker",
+        "image": "jamievardy.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1042,
+        "fName": "Sergio",
+        "lName": "Aguero",
+        "team": "Manchester City",
+        "position": "Striker",
+        "image": "sergioaguero.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1015,
+        "fName": "Claudio",
+        "lName": "Bravo",
+        "team": "Manchester City",
+        "position": "Goalkeeper",
+        "image": "claudiobravo.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1703,
+        "fName": "Gael",
+        "lName": "Clichy",
+        "team": "Manchester City",
+        "position": "Defender",
+        "image": "gaelclichy.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1203,
+        "fName": "Kevin",
+        "lName": "De Bruyne",
+        "team": "Manchester City",
+        "position": "Midfielder 2",
+        "image": "kevindebruyne.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1045,
+        "fName": "Kelechi",
+        "lName": "Iheanacho",
+        "team": "Manchester City",
+        "position": "Striker",
+        "image": "kelechiiheanacho.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2200,
+        "fName": "Gabriel",
+        "lName": "Jesus",
+        "team": "Manchester City",
+        "position": "Striker",
+        "image": "gabrieljesus.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1008,
+        "fName": "Aleksandar",
+        "lName": "Kolarov",
+        "team": "Manchester City",
+        "position": "Defender",
+        "image": "aleksandarkolarov.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2201,
+        "fName": "Leroy",
+        "lName": "Sane",
+        "team": "Manchester City",
+        "position": "Midfielder 1",
+        "image": "leroysane.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1040,
+        "fName": "David",
+        "lName": "Silva",
+        "team": "Manchester City",
+        "position": "Midfielder 1",
+        "image": "davidsilva.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1036,
+        "fName": "Raheem",
+        "lName": "Sterling",
+        "team": "Manchester City",
+        "position": "Midfielder 2",
+        "image": "raheemsterling.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1500,
+        "fName": "Yaya",
+        "lName": "Toure",
+        "team": "Manchester City",
+        "position": "Midfielder 1",
+        "image": "yayatoure.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1001,
+        "fName": "Eric",
+        "lName": "Bailly",
+        "team": "Manchester United",
+        "position": "Defender",
+        "image": "ericbailly.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1017,
+        "fName": "David",
+        "lName": "De Gea",
+        "team": "Manchester United",
+        "position": "Goalkeeper",
+        "image": "daviddegea.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1706,
+        "fName": "Ander",
+        "lName": "Herrera",
+        "team": "Manchester United",
+        "position": "Midfielder 1",
+        "image": "anderherrera.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1044,
+        "fName": "Zlatan",
+        "lName": "Ibrahimovic",
+        "team": "Manchester United",
+        "position": "Striker",
+        "image": "zlatanibrahimovic.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1705,
+        "fName": "Phil",
+        "lName": "Jones",
+        "team": "Manchester United",
+        "position": "Defender",
+        "image": "philjones.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1031,
+        "fName": "Juan",
+        "lName": "Mata",
+        "team": "Manchester United",
+        "position": "Midfielder 1",
+        "image": "juanmata.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2202,
+        "fName": "Henrikh",
+        "lName": "Mkhitaryan",
+        "team": "Manchester United",
+        "position": "Midfielder 2",
+        "image": "henrikhmkhitaryan.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1034,
+        "fName": "Paul",
+        "lName": "Pogba",
+        "team": "Manchester United",
+        "position": "Midfielder 2",
+        "image": "paulpogba.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1204,
+        "fName": "Marcus",
+        "lName": "Rashford",
+        "team": "Manchester United",
+        "position": "Striker",
+        "image": "marcusrashford.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1704,
+        "fName": "Antonio",
+        "lName": "Valencia",
+        "team": "Manchester United",
+        "position": "Defender",
+        "image": "antoniovalencia.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1709,
+        "fName": "Joe",
+        "lName": "Allen",
+        "team": "Stoke",
+        "position": "Midfielder 1",
+        "image": "joeallen.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2001,
+        "fName": "Marko",
+        "lName": "Arnautovic",
+        "team": "Stoke",
+        "position": "Midfielder 2",
+        "image": "markoarnautovic.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2002,
+        "fName": "Peter",
+        "lName": "Crouch",
+        "team": "Stoke",
+        "position": "Striker",
+        "image": "petercrouch.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2307,
+        "fName": "Erik",
+        "lName": "Pieters",
+        "team": "Stoke",
+        "position": "Defender",
+        "image": "erikpieters.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2308,
+        "fName": "Ryan",
+        "lName": "Shawcross",
+        "team": "Stoke",
+        "position": "Defender",
+        "image": "ryanshawcross.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1000,
+        "fName": "Toby",
+        "lName": "Alderweireld",
+        "team": "Tottenham",
+        "position": "Defender",
+        "image": "tobyalderweireld.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1401,
+        "fName": "Dele",
+        "lName": "Alli",
+        "team": "Tottenham",
+        "position": "Midfielder 1",
+        "image": "delealli.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2310,
+        "fName": "Eric",
+        "lName": "Dier",
+        "team": "Tottenham",
+        "position": "Midfielder 2",
+        "image": "ericdier.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1208,
+        "fName": "Christian",
+        "lName": "Eriksen",
+        "team": "Tottenham",
+        "position": "Midfielder 2",
+        "image": "christianeriksen.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1209,
+        "fName": "Harry",
+        "lName": "Kane",
+        "team": "Tottenham",
+        "position": "Striker",
+        "image": "harrykane.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1018,
+        "fName": "Hugo",
+        "lName": "Lloris",
+        "team": "Tottenham",
+        "position": "Goalkeeper",
+        "image": "hugolloris.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1035,
+        "fName": "Heung-Min",
+        "lName": "Son",
+        "team": "Tottenham",
+        "position": "Midfielder 1",
+        "image": "heung-minson.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1014,
+        "fName": "Kyle",
+        "lName": "Walker",
+        "team": "Tottenham",
+        "position": "Defender",
+        "image": "kylewalker.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1037,
+        "fName": "Victor",
+        "lName": "Wanyama",
+        "team": "Tottenham",
+        "position": "Midfielder 1",
+        "image": "victorwanyama.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1021,
+        "fName": "Nacer",
+        "lName": "Chadli",
+        "team": "West Brom",
+        "position": "Midfielder 2",
+        "image": "nacerchadli.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1006,
+        "fName": "Jonny",
+        "lName": "Evans",
+        "team": "West Brom",
+        "position": "Defender",
+        "image": "jonnyevans.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 2311,
+        "fName": "Ben",
+        "lName": "Foster",
+        "team": "West Brom",
+        "position": "Goalkeeper",
+        "image": "benfoster.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1011,
+        "fName": "Gareth",
+        "lName": "McAuley",
+        "team": "West Brom",
+        "position": "Defender",
+        "image": "garethmcauley.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1707,
+        "fName": "Matt",
+        "lName": "Phillips",
+        "team": "West Brom",
+        "position": "Midfielder 1",
+        "image": "mattphillips.jpg",
+        "ranking": 1500
+    },
+    {
+        "id": 1047,
+        "fName": "Salomon",
+        "lName": "Rondon",
+        "team": "West Brom",
+        "position": "Striker",
+        "image": "salomonrondon.jpg",
+        "ranking": 1500
+    }
+]
