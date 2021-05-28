@@ -1,8 +1,9 @@
 <template>
   <div class="about">
     <h1>Market</h1>
-
-    <FanTokens @selectedToken="openInDialog" :data ="fanTokens"/>
+    <!-- {{fanTokens}} -->
+    <!-- <FanTokens v-if="fanTokens.length>0" @selectedToken="openInDialog" :data ="fanTokens"/> -->
+    <FanTokens @selectedToken="openInDialog"/>
 
     <BuyDialog :data="toDialog"/>
 
@@ -25,7 +26,7 @@ export default {
   data() {
     return {
       toDialog: {
-        token:'',
+        tokenId:'',
         showDialog: false
       }
     }
@@ -33,8 +34,8 @@ export default {
   methods: {
     openInDialog(id){
       // console.log(id)
-      const fanToken = this.fanTokens.find(token=> token.id == id)
-      this.toDialog.token = fanToken
+      // const fanToken = this.fanTokens.find(token=> token.id == id)
+      this.toDialog.tokenId = id
       this.toDialog.showDialog = true
     }
   },

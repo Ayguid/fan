@@ -70,7 +70,8 @@ export default {
     })
 
       this.socket.on('message', (data) => {
-      console.log(data)
+      console.log('msg')
+      this.$store.state.fanTokens = data
     })
   }
 }

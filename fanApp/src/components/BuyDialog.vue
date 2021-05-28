@@ -2,14 +2,15 @@
     
     <div class="dialog">
         <!-- {{data}} -->
-      <md-dialog :md-active.sync="data.showDialog" @md-closed="reset()">
+      <md-dialog v-if="selectedToken" :md-active.sync="data.showDialog" @md-closed="reset()">
         <md-dialog-title>Buy/sell</md-dialog-title>
-
+        <!-- {{data}}
+        {{getToken(data.tokenId)}} -->
         <md-tabs md-dynamic-height>
           <md-tab md-label="General">
-
+            <!-- {{selectedToken}} -->
             <md-avatar>
-              <img :src="data.token.img" alt="People" />
+              <img :src="selectedToken.img" alt="People" />
             </md-avatar>
 
             <md-field :class="messageClass">
@@ -19,8 +20,9 @@
             </md-field>
 
             <div class="md-list-item-text">
-             <span>{{ data.token.name }} </span>
-             <span>Supply {{ data.token.supply }}</span>
+             <span>{{ selectedToken.name }} </span>
+             <span>Supply {{ selectedToken.supply }}</span>
+             <span>Value  <span :class="selectedToken.trend">{{ selectedToken.value }}</span> </span>
             </div>
           </md-tab>
 
@@ -32,7 +34,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
           </md-tab>
 
-          <md-tab md-label="Account">
+          <md-tab md-label="Pool">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam mollitia dolorum dolores quae commodi impedit possimus qui, atque at voluptates cupiditate. Neque quae culpa suscipit praesentium inventore ducimus ipsa aut.</p>
           </md-tab>
@@ -58,9 +60,20 @@ export default {
     props: ["data"],
     data() {
     return {
-        required: null,
-        hasMessages: null
+      required: null,
+      hasMessages: null
     };
+  },
+  computed: {
+    ...mapGetters(["fanTokens","userFanBalance","userTokens", "getToken"]),
+    messageClass () {
+      return {
+        'md-invalid': this.hasMessages
+      }
+    },
+    selectedToken(){
+      return this.getToken(this.data.tokenId)
+    }
   },
   methods: {
     reset() { // no es necesario pero bueh...
@@ -69,12 +82,11 @@ export default {
       this.required = null
     },
     buyToken(){
-      if (this.required == null || this.required == ''){
+      if (this.required == null || this.required == ''){//validamos si hay amount
         this.hasMessages = true
       }else{
-        this.$store.dispatch('buyToken', {token:this.data.token, amount: this.required})
+        this.$store.dispatch('buyToken', {token: this.getToken(this.data.tokenId), amount: this.required})
         this.reset()
-        //this.showDialog = false
         this.$router.push('/myportfolio')
       }
     },
@@ -82,16 +94,17 @@ export default {
       if (this.required) this.hasMessages = null
     }
   },
-  computed: {
-    ...mapGetters(["fanTokens","userFanBalance","userTokens"]),
-    messageClass () {
-      return {
-        'md-invalid': this.hasMessages
-      }
-    }
-  },
+
   created() {
 
   },
 }
 </script>
+<style scoped>
+  .up {
+    color: #3acf56 !important;
+  }
+  .down {
+    color: #eb3434 !important;
+  }
+</style>

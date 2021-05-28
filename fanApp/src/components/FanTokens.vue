@@ -9,7 +9,7 @@
         <md-input
           placeholder="Search by token name..."
           v-model="search"
-          @input="searchOnTable"
+          
         />
       </md-field>
 
@@ -27,6 +27,7 @@
           <div class="md-list-item-text">
             <span >{{ token.name }}</span>
             <span>Supply {{ token.supply }}</span>
+            <span>Value  <span :class="token.trend">{{ token.value }}</span> </span>
           </div>
             <md-button  @click="$emit('selectedToken', token.id)" class="md-icon-button">
             <md-icon>add_shopping_cart</md-icon>
@@ -43,6 +44,8 @@
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
+
 const toLower = (text) => {
   return text.toString().toLowerCase();
 };
@@ -60,23 +63,36 @@ const searchByName = (items, term) => {
 };
 
 export default {
-  name: "MyBalance",
+  name: "FanTokens",
   props: ["data"],
   data() {
     return {
       search: '',
-      searched:'',
-      tokens:''
     };
   },
   methods: {
-    searchOnTable() {
-      this.searched = searchByName(this.tokens, this.search);
-    },
+
   },
-  created() {
-    this.tokens = this.data;
-    this.searched = this.tokens;
-  },
+  computed :{
+    ...mapGetters(["fanTokens","userFanBalance","userTokens"]),
+    searched () {
+      let x = ''
+      if (this.search.length > 0){
+        x = searchByName(this.fanTokens, this.search)
+      }else{
+        x = this.fanTokens
+      }
+      return x
+    }
+  }
 };
 </script>
+
+<style scoped>
+  .up {
+    color: #3acf56 !important;
+  }
+  .down {
+    color: #eb3434 !important;
+  }
+</style>
