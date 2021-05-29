@@ -4,6 +4,7 @@ import Trends from '../views/Trends.vue'
 import Market from '../views/Market.vue'
 import MyTrades from '../views/MyTrades.vue'
 import MyPortfolio from '../views/MyPortfolio.vue'
+import Trading from '../views/Trading.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const routes = [
     path: '/myportfolio',
     name: 'MyPortfolio',
     component: MyPortfolio
+  },
+  {
+    path: '/trading',
+    name: 'Trading',
+    component: Trading
   }
 ]
 

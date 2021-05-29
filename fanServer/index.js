@@ -20,15 +20,20 @@ const io = socketIo(server, {
 })
 
 var fanTokens = fakeData.fanTokens // reemplazaremo
+var msgs = []
 
 io.sockets.on("connection", (socket) => {
 
 
   io.emit("mount", 'ready')
   
-  // socket.on('message', (evento, nro) => {
-  //   io.emit('output_changed', nro)
-  // })
+  socket.on('mssg', (msg) => {
+    console.log(msg)
+    msgs.push(msg)
+    io.emit('newMsg', msg)
+    // console.log(msg)
+  })
+  
 
   setInterval(() => {
     // console.log('Tokens updated')

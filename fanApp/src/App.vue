@@ -24,6 +24,11 @@
             <span class="md-list-item-text">Market</span>
           </md-list-item>
 
+          <md-list-item to="/trading" >
+            <md-icon>leaderboard</md-icon>
+            <span class="md-list-item-text">Trading</span>
+          </md-list-item>
+
           <md-list-item to="/dashboard">
             <md-icon>dashboard</md-icon>
             <span class="md-list-item-text">Dashboard</span>
@@ -61,14 +66,13 @@ export default {
   data (){
     return {
       menuVisible: false,
-      socket : io('http://192.168.1.107:7070')
+      socket : io('http://192.168.0.162:7070')
     }
   },
   mounted () {
       this.socket.on('mount', (data) => {
       console.log(data)
     })
-
       this.socket.on('message', (data) => {
       console.log('msg')
       this.$store.state.fanTokens = data
